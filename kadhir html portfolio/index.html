@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KADHIRVEL.V | Photographer & Visual Editor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            KADHIRVEL<span>.V</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#photography">Photography</a>
+            <a href="#videography">Videography</a>
+            <a href="#editing">Editing</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <p class="small-text">
+                PHOTOGRAPHER • VIDEOGRAPHER • EDITOR
+            </p>
+
+            <h1>
+                Capturing<br>
+                <span>Moments.</span>
+            </h1>
+
+            <p class="description">
+                I capture moments, create visuals and turn
+                ideas into stories through photography,
+                videography and editing.
+            </p>
+
+            <a href="#photography" class="button">
+                VIEW MY WORK
+            </a>
+
+        </div>
+
+
+        <!-- YOUR PHOTO -->
+
+        <div class="profile-photo">
+
+            <!-- Change kadhir.jpg to your photo filename -->
+
+            <img src="face 2.png" alt="Kadhirvel">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <p class="section-label">
+            ABOUT ME
+        </p>
+
+        <h2>
+            Creating visuals<br>
+            with <span>purpose.</span>
+        </h2>
+
+        <p class="about-text">
+            I'm Kadhirvel, an aspiring photographer,
+            videographer and visual editor. I enjoy
+            capturing real moments, creating visual
+            stories and experimenting with photography,
+            videography and editing.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= PHOTOGRAPHY ================= -->
+
+    <section class="work-section" id="photography">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                01 / PHOTOGRAPHY
+            </p>
+
+            <h2>
+                Moments<br>
+                <span>Captured.</span>
+            </h2>
+
+            <p>
+                A collection of moments, people and places
+                captured through my lens.
+            </p>
+
+        </div>
+
+
+        <div class="photo-grid">
+
+
+            <!-- PHOTO 1 -->
+
+            <div class="photo-card">
+
+                <img
+                    src="image copy 4.png"
+                    alt="Photography"
+                    onclick="openImage(this)"
+                >
+
+            </div>
+
+
+            <!-- PHOTO 2 -->
+
+            <div class="photo-card">
+
+                <img
+                    src="image copy 3.png"
+                    alt="Photography"
+                    onclick="openImage(this)"
+                >
+
+            </div>
+
+
+            <!-- PHOTO 3 -->
+
+            <div class="photo-card">
+
+                <img
+                    src="image copy 2.png"
+                    alt="Photography"
+                    onclick="openImage(this)"
+                >
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FULL SCREEN IMAGE VIEWER ================= -->
+
+    <div id="imageViewer" class="image-viewer">
+
+        <button
+            class="close-button"
+            onclick="closeImage()"
+        >
+            &times;
+        </button>
+
+        <img
+            id="fullImage"
+            src=""
+            alt="Full Screen Photo"
+        >
+
+    </div>
+
+
+
+    <!-- ================= VIDEOGRAPHY ================= -->
+
+    <section class="work-section video-section" id="videography">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                02 / VIDEOGRAPHY
+            </p>
+
+            <h2>
+                Stories<br>
+                <span>In Motion.</span>
+            </h2>
+
+            <p>
+                Visual stories created through movement,
+                moments and cinematic frames.
+            </p>
+
+        </div>
+
+
+        <div class="video-grid">
+
+
+            <!-- VIDEO 1 -->
+
+            <div class="video-card">
+
+                <video controls>
+
+                    <source
+                        src="1004.mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video.
+
+                </video>
+
+                <div class="video-info">
+
+                   
+
+                    
+
+                </div>
+                 <div class="video-card">
+
+                <video controls>
+
+                    <source
+                        src="1004(2).mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video.
+
+                </video>
+
+            </div>
+
+
+            <!-- VIDEO 2 -->
+
+            <div class="video-card">
+
+                <video controls>
+
+                    <source
+                        src="1004(1).mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video.
+
+                </video>
+
+                <div class="video-info">
+
+                   
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= VIDEO EDITING ================= -->
+
+    <section class="work-section editing-section" id="editing">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                03 / VIDEO EDITING
+            </p>
+
+            <h2>
+                Frames<br>
+                <span>Reimagined.</span>
+            </h2>
+
+            <p>
+                Creative edits, reels and cinematic stories
+                created through my editing.
+            </p>
+
+        </div>
+
+
+        <div class="edit-grid">
+
+
+            <!-- EDIT 1 -->
+
+            <div class="edit-card">
+
+                <video controls>
+
+                    <source
+                        src=""
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video.
+
+                </video>
+
+                <div class="edit-info">
+
+                    <h3>
+                        Creative Edit
+                    </h3>
+
+                    <p>
+                        Color • Music • Transitions
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- EDIT 2 -->
+
+            <!-- <div class="edit-card">
+
+                <video controls>
+
+                    <source
+                        src="edit2.mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video.
+
+                </video>
+
+                <div class="edit-info">
+
+                    <h3>
+                        Cinematic Edit
+                    </h3>
+
+                    <p>
+                        Storytelling • Color Grading
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- EDIT 3 -->
+
+            <!-- <div class="edit-card">
+
+                <video controls>
+
+                    <source
+                        src="edit3.mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video.
+
+                </video>
+
+                <div class="edit-info">
+
+                    <h3>
+                        Reel Edit
+                    </h3>
+
+                    <p>
+                        Short Form • Motion
+                    </p>
+
+                </div> -->
+
+            </div> -->
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="services">
+
+        <p class="section-label">
+            WHAT I DO
+        </p>
+
+        <h2>
+            My Services
+        </h2>
+
+
+        <div class="service-grid">
+
+
+            <div class="service">
+
+                <h3>
+                    Photography
+                </h3>
+
+                <p>
+                    Portraits, events, lifestyle
+                    and creative photography.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>
+                    Videography
+                </h3>
+
+                <p>
+                    Events, reels and cinematic
+                    visual content.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>
+                    Photo Editing
+                </h3>
+
+                <p>
+                    Creative editing, colour correction
+                    and visual enhancement.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>
+                    Video Editing
+                </h3>
+
+                <p>
+                    Reels, cinematic edits and
+                    visual storytelling.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <p class="section-label">
+            GET IN TOUCH
+        </p>
+
+        <h2>
+            Have a project<br>
+            in <span>mind?</span>
+        </h2>
+
+        <p>
+            Let's create something worth remembering.
+        </p>
+
+
+        <!-- CHANGE YOUR EMAIL HERE -->
+
+        <a
+            href="https://www.instagram.com/visuals_speak_/"
+            target="_blank"
+            class="button"
+        >
+            CONTACT ME
+        </a>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            KADHIRVEL<span>.V</span>
+        </div>
+
+        <p>
+            Photography • Videography • Visual Editing
+        </p>
+
+        <p class="copyright">
+            © 2026 Kadhirvel.V. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        function openImage(image) {
+
+            const viewer =
+                document.getElementById("imageViewer");
+
+            const fullImage =
+                document.getElementById("fullImage");
+
+            fullImage.src = image.src;
+
+            viewer.classList.add("active");
+
+            document.body.style.overflow = "hidden";
+
+        }
+
+
+        function closeImage() {
+
+            const viewer =
+                document.getElementById("imageViewer");
+
+            viewer.classList.remove("active");
+
+            document.body.style.overflow = "auto";
+
+        }
+
+
+        document
+            .getElementById("imageViewer")
+            .addEventListener("click", function(event) {
+
+                if (event.target === this) {
+
+                    closeImage();
+
+                }
+
+            });
+
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (event.key === "Escape") {
+
+                    closeImage();
+
+                }
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
